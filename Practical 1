@@ -1,0 +1,30 @@
+import sun.plugin2.message.ShowStatusMessage;
+
+import java.awt.*;
+import java.applet.*;
+public class Pr1_3303 extends Applet{
+    Label l1,l2;
+    Checkbox c1,c2,c3,c4,c5;
+    Button b1,b2;
+    CheckboxGroup cg;
+        public void init(){
+        l1 = new Label("Gender");
+        l2 = new Label("Language");
+        c1 = new Checkbox("Male",false,cg);
+        c2 = new Checkbox("Female",false,cg);
+        c3 = new Checkbox("Marathi");
+        c4 = new Checkbox("English");
+        c5 = new Checkbox("Hindi");
+        b1 = new Button("Submit");
+        b2 = new Button("Cancel");
+        add(l1);
+        add(c1);
+        add(c2);
+        add(l2);
+        add(c3);
+        add(c4);
+        add(c5);
+        add(b1);
+        add(b2);
+    }
+}
