@@ -26,3 +26,55 @@ public class Pr1_3303 extends Applet{
         add(b2);
     }
 }
+
+
+
+import java.awt.*;
+import java.applet.*;
+
+public class Pr1_2_3303 extends Applet {
+    Label l1,l2,l3,l4;
+    TextField t1,t2;
+    TextArea t3;
+    Choice c1,c2,c3;
+    Button b1,b2;
+    public void init(){
+        l1 = new Label("Name");
+        l2 = new Label("Address");
+        l3 = new Label("Mobile No.");
+        l4 = new Label("DOB");
+        t1 = new TextField(10);
+        t2 = new TextField(10);
+        t3 = new TextArea();
+        t3.setSize(10,10);
+        c1 = new Choice();
+        c2 = new Choice();
+        c3 = new Choice();
+        b1 = new Button("Submit");
+        b2 = new Button("Cancel");
+        for(int i=1;i<=31;i++){
+            c1.add(String.valueOf(i));
+        }
+
+        c2.add("JAN"); c2.add("FEB"); c2.add("MAR"); c2.add("APR"); c2.add("MAY"); c2.add("JUN");
+        c2.add("JUL"); c2.add("AUG"); c2.add("SEP"); c2.add("OCT"); c2.add("NOV"); c2.add("DEC");
+
+        for(int i=1947;i<=2021;i++){
+            c3.add(String.valueOf(i));
+        }
+
+        add(l1);
+        add(t1);
+        add(l2);
+        add(t3);
+        add(l3);
+        add(t2);
+        add(l4);
+        add(c1);
+        add(c2);
+        add(c3);
+        add(b1);
+        add(b2);
+    }
+
+}
